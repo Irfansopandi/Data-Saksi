@@ -1,0 +1,52 @@
+# Dependencies
+node_modules/
+backend/node_modules/
+frontend/node_modules/
+
+# Environment Variables & Credentials (SANGAT SENSITIF)
+.env
+.env.*
+*.env
+backend/.env
+backend/.env.*
+frontend/.env
+frontend/.env.*
+!*.env.example
+!backend/.env.example
+!frontend/.env.example
+
+# Google Service Account & Private Keys (SANGAT SENSITIF)
+*.json.key
+service-account.json
+backend/service-account.json
+backend/*.json
+!backend/package.json
+!backend/package-lock.json
+
+# Storage & Berkas Perkara / KTP Warga (PRIVASI & SENSITIF)
+backend/storage/*
+!backend/storage/temp/.gitkeep
+
+# Temporary / Scratch Test Scripts
+backend/scratch_test_sa.js
+backend/test_*.js
+
+# Production Builds
+dist/
+frontend/dist/
+dist-ssr/
+*.local
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor & OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

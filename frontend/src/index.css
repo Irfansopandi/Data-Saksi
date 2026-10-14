@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url('/batik.png');
+  background-color: #e4e4e4; /* agak abu-abu */
+  background-blend-mode: multiply; /* bikin motif batik lebih tebal/gelap */
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Custom styling for cards */
+.card {
+  border-radius: 8px;
+}
+
+/* Custom focus ring for form inputs (green and thinner) */
+.form-control:focus, .form-select:focus {
+  border-color: #198754;
+  box-shadow: 0 0 0 0.15rem rgba(25, 135, 84, 0.25);
+}
+
+/* Hide dates from previous/next months in the calendar */
+.react-datepicker__day--outside-month {
+  visibility: hidden;
+}
+
+/* Datepicker inside InputGroup */
+.input-group > .react-datepicker-wrapper {
+  flex: 1 1 auto;
+  width: 1%;
+  min-width: 0;
+}
+
+.input-group > .react-datepicker-wrapper .form-control {
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+/* Responsive Perkara Input */
+.perkara-input-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 4px;
+}
+
+.perkara-input-group {
+  min-width: 310px;
+}
+
+.perkara-nomor-input {
+  min-width: 60px;
+  font-weight: 500;
+}
+
+@media (max-width: 576px) {
+  .perkara-input-group .form-control,
+  .perkara-input-group .input-group-text {
+    font-size: 0.85rem;
+    padding-left: 0.35rem;
+    padding-right: 0.35rem;
+  }
+}
+
